@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2><b>Do you love me?</b></h2>
+<button onclick="yes()">YES</button>
+<button id="no" style="position: absolute">NO</button>
+<script>
+    let height = window.innerHeight;
+    let width = window.innerWidth;
+    function yes() {
+        alert('<3');
+    }
+    let khong = document.getElementById('no');
+    khong.addEventListener('mouseover', function () {
+        khong.style.left = Math.random()* (height/3) + 'px';
+        khong.style.top = Math.random()* (width/3) + 'px';
+    })
+</script>
+</body>
+</html>
